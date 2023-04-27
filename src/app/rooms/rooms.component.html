@@ -1,0 +1,38 @@
+<!---//1- Bindig santay Interpolation//-->
+
+<h1>Welcome to {{hotelName}}</h1>
+<!---//2- Bindig santay propety binding//-->
+<div [hidden]="hiddeRooms">
+    <h3>Number of Rooms</h3>
+    <div [innerText]="numberOfRooms">Number of Rooms</div>
+</div>
+{{rooms?.availableRooms ?? 'No Rooms !'}}
+<div *ngIf=" rooms.availableRooms >0 ">
+    Room List
+    {{roomList}}
+    <table>
+        <tr>
+            <th>Index</th>
+            <th> Room Nummber</th>
+            <th> Room Type</th>
+            <th> Room Price</th>
+            <th> Room Amenities</th>
+            <th> Checkin Time</th>
+        </tr>
+        <tr *ngFor=" let room of roomList let i=index">
+            <td>{{i}}</td>
+            <td>{{room.roomNumber}}</td>
+            <td>{{room.roomType}}</td>
+            <td>{{room.price}}</td>
+            <td>{{room.amenities}}</td>
+            <td>{{room.checkinTime}}</td>
+        </tr>
+    </table>
+
+
+</div>
+
+
+
+<!---//3- Bindig santay Event binding//-->
+<button (click)="toggle()">Toggle</button>
