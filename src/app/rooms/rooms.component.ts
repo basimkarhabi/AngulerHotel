@@ -23,29 +23,33 @@ export class RoomsComponent implements OnInit {
     {
       roomNumber: 1,
       roomType: 'Delux Room',
-      amenities: 'Air Condition , Fre Wifi , Tv ; Bathroom , Kitchen',
+      amenities: 'Air Condition , Free Wifi , Tv ; Bathroom , Kitchen',
       price: 500,
       photos: "",
       checkinTime: new Date('11-Nov-2023'),
-      checkoutTime: new Date('15-Nov-2023')
+      checkoutTime: new Date('15-Nov-2023'),
+      rating: 4.5,
+
     },
     {
       roomNumber: 2,
       roomType: 'Single Room',
-      amenities: 'Air Condition , Fre Wifi , Tv ; Bathroom , Kitchen',
+      amenities: 'Air Condition , Free Wifi , Tv ; Bathroom , Kitchen',
       price: 1000,
       photos: "",
       checkinTime: new Date('11-Nov-2023'),
-      checkoutTime: new Date('15-Nov-2023')
+      checkoutTime: new Date('15-Nov-2023'),
+      rating: 3.4,
     },
     {
       roomNumber: 3,
       roomType: 'Doupple Room',
-      amenities: 'Air Condition , Fre Wifi , Tv ; Bathroom , Kitchen',
+      amenities: 'Air Condition , Free Wifi , Tv ; Bathroom , Kitchen',
       price: 1500,
       photos: "",
       checkinTime: new Date('11-Nov-2023'),
-      checkoutTime: new Date('15-Nov-2023')
+      checkoutTime: new Date('15-Nov-2023'),
+      rating: 2.6,
     }
 
   ]
